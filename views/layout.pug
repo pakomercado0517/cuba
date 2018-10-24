@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0 shrink-to-fit=no')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/slide.css')
+  body
+    ul.cb-slideshow
+      li
+        span Image 01
+        div
+          h3 Descubre
+      li
+        span Image 02
+        div
+          h3 Relajate
+      li
+        span Image 03
+        div
+          h3 Diviertete
+      li
+        span Image 04
+        div
+          h3 Apasiónate
+      li
+        span Image 05
+        div
+          h3 Enamórate
+      li
+        span Image 06
+        div
+          h3 Asombrate
+    nav.navbar.navbar-dark.bg-dark.justify-content-around
+      ul.nav.nav-tabs
+        li.nav-item
+          a.nav-link.active(href='/') Inicio
+        li.nav-item
+          a.nav-link(href='#') Reservaciones
+        li.nav-item
+          a.nav-link(href='#') Paquetes
+    .container-fluid
+      block content
+
+
+
+  script(src='/javascripts/jquery.js')
+  script(src='/javascripts/bootstrap.js')
