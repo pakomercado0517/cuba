@@ -8,8 +8,19 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-blend-mode: multiply;
+  color:#ffff!important;
 }
-#img-card-presentation {
-  width:400px;
-  height:253px;
+
+#casas {
+  background:rgba(0,0,0,0.3);
+  color:#fff;
+}
+
+#casas-img {
+  max-width:410px;
+  max-height:215px;
+}
+
+#casas p {
+  text-align: justify;
 }
