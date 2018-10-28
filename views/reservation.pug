@@ -1,0 +1,39 @@
+extends layout
+
+block reservation
+
+  .row.justify-content-center
+    .col-6.mt-5
+      form
+        .form-row
+          .col
+            label(for='inputReservationName') Nombres(s)
+            input.form-control#inputReservationName(type='text', aria-describedby='nameReservation', placeholder='Escribe tu Nombre(s)')
+          .col
+            label(for='inputReservationLastName') Apellidos
+            input.form-control#inputReservationLastName(type='text', aria-describedby='lastNameReservation', placeholder='Escribe tus Apellidos')
+        .form-group
+          label(for='inputEmail') Email
+          input.form-control#inputName(type='email', aria-describedby='emailReservation', placeholder='Ingresa tu email')
+        .form-group
+          label(for='inputPhoneNumber') Numero Telefónico
+          input.form-control#inputPhoneNumber(type='number', aria-describedby='PhoneReservation', placeholder='Ingresa tu número telefónico')
+        .form-group
+          label(for='inputPack') Escoge tu Paquete
+          select#inputPack.form-control
+            option(selected) Escoge tu paquete...
+            option Paquete 1
+            option Paquete 2
+            option Paquete 3
+            option Paquete 4
+        .form-group
+          label(for='inputDate') Escoge la fecha
+          input.form-control#inputDate(type='date', aria-describedby='dateReservation')
+        .form-group
+          label(for='inputComentReservation') Ingresa tus dudas o comentarios
+          .input-group
+            span.input-group-text Dudas o Comentarios
+            textarea.form-control(aria-label='Ingresa tus dudas o comentarios')
+        .form-group
+          button.btn.btn-success.btn-lg(type='submit') Enviar
+
